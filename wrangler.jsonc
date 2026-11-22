@@ -1,0 +1,15 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "astro-starlight-starter",
+	"compatibility_date": "2026-11-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"pages_build_output_dir": "./dist",
+	// With a Wrangler config, Pages manages the project's environment variables from this
+	// file (the dashboard only allows secrets). The build image reads PNPM_VERSION to pick
+	// pnpm, so keep it in sync with "packageManager".
+	// Secrets (Pages dashboard or `wrangler pages secret put`): RESEND_API_KEY, FEEDBACK_TO.
+	// Optional plain variable: FEEDBACK_FROM, a sender on a Resend-verified domain.
+	"vars": {
+		"PNPM_VERSION": "12.21.0"
+	}
+}

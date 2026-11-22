@@ -1,0 +1,6 @@
+# Local dev secrets for Cloudflare Pages Functions (wrangler). Copy to .dev.vars (gitignored).
+# Docs feedback widget (functions/api/feedback.ts) emails votes via Resend.
+RESEND_API_KEY=
+FEEDBACK_TO=you@example.com
+# Sender on a Resend-verified domain (set in wrangler.jsonc for deploys)
+# FEEDBACK_FROM="Docs feedback <noreply@your-verified-domain.com>"
